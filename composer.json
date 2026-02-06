@@ -1,0 +1,21 @@
+{
+    "name": "cauan/miniframework",
+    "require": {
+        "php": ">= 7.0"
+    },
+
+    "authors": [
+        {
+            "name": "Cauan Bernardino Diogo",
+            "email": "cauan@gmail.com"
+        }
+    ],
+
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/",
+            "MF\\": "vendor/MF/"
+        }
+    }
+
+}
