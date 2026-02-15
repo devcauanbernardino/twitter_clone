@@ -1,21 +1,62 @@
+<div class="container-fluid h-100">
+  <div class="row h-100">
 
-<h1>Index</h1>
+    <!-- Banner -->
+    <div class="col-md-6 banner">
+      <div class="row h-100 justify-content-center align-items-center">
+        <div>
+          <div class="communicationItem mb-3">
+            <i class="fa-solid fa-magnifying-glass fa-2x me-3"></i>
+            Siga o que lhe interessa.
+          </div>
+          <div class="communicationItem mb-3">
+            <i class="fa-solid fa-user-group fa-2x me-3"></i>
+            Saiba sobre o que as pessoas estão falando.
+          </div>
+          <div class="communicationItem">
+            <i class="fa-regular fa-comment fa-2x me-3"></i>
+            Participe da conversa.
+          </div>
+        </div>
+      </div>
+    </div>
 
-<hr>
+    <!-- Conteúdo -->
+    <div class="col-md-6 pt-4 ps-5 pe-5">
 
-<?php
-// echo '<pre>';
-// print_r($this->view->dados);
-// echo '</pre>';
+      <form>
+        <div class="row g-2 align-items-center">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="E-mail">
+          </div>
+          <div class="col">
+            <input type="password" class="form-control" placeholder="Senha">
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary">Entrar</button>
+          </div>
+        </div>
+      </form>
 
+      <div class="row pt-5 ps-5 pe-5">
+        <div class="col ps-5 pe-5">
+          <img src="/img/twitter_logo.png" class="mb-3" alt="Twitter logo">
 
-foreach ($this->view->dados as $indice => $produto) {
-    // echo $valor . '<br>';
-    echo $produto['id'] . ' - ' . $produto['descricao'] . ' - ' . $produto['preco'] . '<br>';
+          <h1 class="title">
+            Veja o que está acontecendo no mundo agora
+          </h1>
 
-}
+          <h2 class="mt-5 subtitle">
+            Participe hoje do Twitter.
+          </h2>
 
+          <a href="/inscreverse" class="btn btn-primary w-100 mb-2">
+            Inscrever-se
+          </a>
+        </div>
+      </div>
 
-echo 'Chegamos ao IndexController e disparamos a action index';
+    </div>
 
-?>
+  </div>
+</div>
