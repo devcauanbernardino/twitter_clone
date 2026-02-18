@@ -19,6 +19,12 @@ class Route extends Bootstrap {
             'action' => 'inscreverse'
         ];
 
+        $routes['registrar'] = [
+            'route' => '/registrar',
+            'controller' => 'indexController',
+            'action' => 'registrar'
+        ];
+
         $this->setRoutes($routes);
 
     }
